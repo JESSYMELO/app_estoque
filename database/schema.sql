@@ -14,4 +14,4 @@ CREATE TABLE usuarios(
   senha VARCHAR(200)  NOT NULL,
   PRIMARY KEY (id)
 );
-insert into usuarios (email, senha) values('admin@gmail.com', '21232f297a57a5a743894a0e4a801fc3');
+insert into usuarios (email, senha) values('admin@gmail.com', 'dce71d49a1cbf5058a0a0cc6f892161d');

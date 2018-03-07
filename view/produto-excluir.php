@@ -7,6 +7,12 @@
  */
 
 include '../vendor/autoload.php';
+
+    //Verificar se o usuario está logado
+    $uDAO = new \App\DAO\UsuarioDAO();
+    $uDAO->verificar();
+
+
 $p = new \App\Model\Produto();
 $p->setId($_GET['id']);
 

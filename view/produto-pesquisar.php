@@ -18,6 +18,12 @@ include 'cabecalho.php';?>
 <?php
     include '../vendor/autoload.php';
 
+    //Verificar se o usuario está logado
+    $uDAO = new \App\DAO\UsuarioDAO();
+    $uDAO->verificar();
+
+
+
     if (isset($_GET['msg']) && $_GET['msg'] == 1)
         echo "<div class='alert alert-success'>Produto excluído com sucesso!</div>";
     if (isset($_GET['msg']) && $_GET['msg'] == 2)
